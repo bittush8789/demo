@@ -1,0 +1,132 @@
+Tell me About your self?
+
+Ans:- Hi, my name is Bittu Kumar. I completed my Bachelor of Computer Applications (BCA) from Arcade Business College, Patna in 2023.
+
+I have 2+ years of professional experience with EXL Service, where I currently work as a Process Associate supporting Liberty Mutual's US P&C Insurance portfolio. In my role, I handle FNOL-based claim requests, review claim documents, validate policy and loss information, and support claim processing activities.
+
+
+Give me roles and resposiblites..
+=====================================
+
+I work as a Process Associate at EXL Service supporting Liberty Mutual's P&C insurance operations. My role involves handling FNOL-based claim requests received through the Phoenix application. I review claim documents, validate policy and loss details, identify whether the claim belongs to Auto, Property, or General Liability, and perform initial claim processing activities. After ensuring all information is accurate and complete, I forward the claim to the appropriate claims department or adjuster for further processing.
+
+
+2. What are your day-to-day responsibilities?
+
+Answer:
+
+On a daily basis, I review claim requests received through FNOL, verify policy and claimant details, classify claims into Auto, Property, or Liability, ensure all required documents are available, process the request in Phoenix, and route it to the concerned claims department while maintaining SLA and quality standards.
+
+3.What is FNOL?
+
+Answer:
+
+FNOL stands for First Notice of Loss. It is the first notification received by the insurance company when a customer reports a loss or incident. The purpose is to capture and validate claim information so the claim can be processed further.
+
+
+4. What types of claims did you handle?
+
+Answer:
+
+I worked primarily on P&C Insurance claims, including Auto Claims, Property Claims, and General Liability Claims.
+
+
+5. How do you identify whether a claim belongs to Auto, Property, or Liability?
+
+Answer:
+
+I review the FNOL documents, loss description, policy information, and supporting documents. Based on the nature of the incident and coverage, I determine whether it falls under Auto, Property, or General Liability.
+
+6. What application did you use?
+
+Answer:
+
+We used Phoenix, an internal claims processing application, to receive, review, process, and route claim requests.
+
+7. How do you ensure quality?
+
+Answer:
+
+I carefully review all documents, validate policy and claimant information, follow SOPs and business guidelines, and ensure all mandatory fields and documents are completed before routing the claim.
+
+
+8.How many claims do you process daily?
+
+On average, I handled around 25–35 claim requests per day, depending on the complexity of the cases and queue volume, while maintaining SLA and quality standards.
+
+
+The volume varied based on queue size and claim complexity, but on average I handled around 35 claim requests per day while maintaining SLA and quality standards.
+Not exactly. The workload varied daily, but the average was around 35 claims per day. Some days it was lower and some days higher depending on the queue volume and claim complexity.
+
+Better Interview Numbers
+
+
+9. AHT
+
+If you say:
+
+35 claims/day
+
+Then a more realistic AHT is:
+
+10–12 minutes per claim
+
+Because:
+
+35 × 10 = 350 min = 5.8 hrs
+35 × 11 = 385 min = 6.4 hrs
+35 × 12 = 420 min = 7 hrs
+
+This leaves time for:
+
+Meetings
+Breaks
+Emails
+System issues
+Quality checks
+Consistent Interview Answer
+
+I typically handled around 35 claim requests per day with an average handling time of approximately 10–12 minutes per claim, while maintaining SLA and quality standards.
+
+
+Q. "What was the SLA time?"
+Ans:- The standard SLA for most of the cases I handled was 24 hours, and I ensured they were processed within the required timeline.
+
+Q. How much time did you take per claim?"
+
+On average, I spent around 10–12 minutes per claim, depending on the complexity and documentation involved.
+
+SLA Time?
+
+24 hours.
+
+AHT?
+
+Around 10–12 minutes per claim.
+
+Claims per day?
+
+Around 25–35 claims per day.
+
+
+============================
+
+HR Round
+=========
+2. Why are you looking for a job change?
+3. Why do you want to join our company?
+4. What do you know about our company?
+5. What are your strengths?
+6. What are your weaknesses?
+7. Why should we hire you?
+9. What is FNOL?
+11. How many claims do you process daily?
+12. What was your AHT?
+13. How do you handle pressure?
+14. Have you ever missed an SLA?
+16. What motivates you?
+18. Are you comfortable working in shifts?
+19. Are you comfortable working under targets? #
+20. Do you have any questions for us?
+"What are your salary expectations?"
+My current CTC is ₹2.65 LPA. Based on my experience and market standards, I am looking for a package in the range of ₹4.5 & I am open to discussion based on the role and growth opportunities.
