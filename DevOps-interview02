@@ -1,0 +1,1438 @@
+# DevOps Engineer Interview Questions (2–3 Years Experience)
+## Tool-Wise Interview Preparation Guide
+
+---
+
+# Linux
+
+## Basic Questions
+
+### Q1. What happens when you run a command in Linux?
+
+**Answer:**
+1. Shell accepts the command.
+2. Searches executable in PATH variable.
+3. Creates a process.
+4. Kernel allocates resources.
+5. Process executes and returns output.
+
+---
+
+### Q2. Difference between Process and Thread?
+
+| Process | Thread |
+|-----------|-----------|
+| Independent execution unit | Lightweight execution unit |
+| Own memory space | Shared memory |
+| Higher overhead | Lower overhead |
+
+---
+
+### Q3. How do you find top memory-consuming processes?
+
+```bash
+top
+```
+
+```bash
+htop
+```
+
+```bash
+ps aux --sort=-%mem | head
+```
+
+---
+
+### Q4. How do you identify which process is using port 8080?
+
+```bash
+netstat -tulnp | grep 8080
+```
+
+```bash
+ss -tulnp | grep 8080
+```
+
+```bash
+lsof -i :8080
+```
+
+---
+
+### Q5. How do you check disk usage?
+
+```bash
+df -h
+```
+
+```bash
+du -sh *
+```
+
+---
+
+### Q6. Difference between Soft Link and Hard Link?
+
+| Soft Link | Hard Link |
+|------------|------------|
+| Points to file path | Points to inode |
+| Can cross filesystem | Cannot cross filesystem |
+| Broken if source deleted | Remains valid |
+
+---
+
+# Git
+
+## Basic Questions
+
+### Q1. Difference between Git Fetch and Git Pull?
+
+**Git Fetch**
+```bash
+git fetch
+```
+
+Downloads changes but doesn't merge.
+
+**Git Pull**
+```bash
+git pull
+```
+
+Downloads + merges.
+
+---
+
+### Q2. Difference between Merge and Rebase?
+
+**Merge**
+```bash
+git merge feature
+```
+
+Creates merge commit.
+
+**Rebase**
+```bash
+git rebase main
+```
+
+Maintains linear history.
+
+---
+
+### Q3. How do you revert a bad commit?
+
+```bash
+git revert <commit-id>
+```
+
+---
+
+### Q4. Difference between Reset and Revert?
+
+| Reset | Revert |
+|---------|---------|
+| Removes history | Preserves history |
+| Dangerous | Safe |
+
+---
+
+### Q5. How do you resolve merge conflicts?
+
+1. Pull latest changes.
+2. Open conflicted files.
+3. Fix manually.
+4. Add file.
+
+```bash
+git add .
+```
+
+5. Commit changes.
+
+---
+
+# Jenkins
+
+## Basic Questions
+
+### Q1. What is Jenkins?
+
+**Answer:**
+Open-source CI/CD automation server used to automate build, test, and deployment pipelines.
+
+---
+
+### Q2. Explain Jenkins Pipeline.
+
+**Declarative Pipeline Example**
+
+```groovy
+pipeline {
+ agent any
+
+ stages {
+
+  stage('Build'){
+   steps{
+    echo "Building"
+   }
+  }
+
+  stage('Test'){
+   steps{
+    echo "Testing"
+   }
+  }
+
+  stage('Deploy'){
+   steps{
+    echo "Deploying"
+   }
+  }
+
+ }
+}
+```
+
+---
+
+### Q3. What is the difference between Declarative and Scripted Pipeline?
+
+| Declarative | Scripted |
+|-------------|------------|
+| Easier | Flexible |
+| Structured | Full Groovy |
+| Recommended | Advanced use cases |
+
+---
+
+### Q4. How do you secure Jenkins?
+
+**Answer**
+- RBAC
+- LDAP/SAML
+- HTTPS
+- Credentials Store
+- Secret Management
+- Backup
+
+---
+
+### Q5. How do you trigger Jenkins automatically?
+
+**Methods**
+- Git Webhooks
+- Poll SCM
+- Cron Trigger
+
+---
+
+# Docker
+
+## Basic Questions
+
+### Q1. What is Docker?
+
+Containerization platform used to package applications and dependencies.
+
+---
+
+### Q2. Difference between VM and Container?
+
+| VM | Container |
+|------|------|
+| Own OS | Shares Host OS |
+| Heavy | Lightweight |
+| Slow Startup | Fast Startup |
+
+---
+
+### Q3. Explain Docker Lifecycle.
+
+```text
+Dockerfile
+    ↓
+Docker Image
+    ↓
+Docker Container
+    ↓
+Running Application
+```
+
+---
+
+### Q4. Difference between CMD and ENTRYPOINT?
+
+| CMD | ENTRYPOINT |
+|--------|--------|
+| Default command | Fixed executable |
+| Easily overridden | Not easily overridden |
+
+---
+
+### Q5. How do you reduce Docker image size?
+
+**Answer**
+- Multi-stage builds
+- Alpine images
+- Remove cache
+- Minimize layers
+
+---
+
+### Q6. Explain Docker Networking.
+
+Types:
+- Bridge
+- Host
+- Overlay
+- None
+
+---
+
+### Q7. What is Docker Volume?
+
+Persistent storage mechanism for containers.
+
+```bash
+docker volume create myvolume
+```
+
+---
+
+# Kubernetes
+
+## Most Important Section
+
+### Q1. What happens when you create a Pod?
+
+```text
+kubectl apply
+      ↓
+API Server
+      ↓
+etcd
+      ↓
+Scheduler
+      ↓
+Node
+      ↓
+Kubelet
+      ↓
+Container Runtime
+      ↓
+Pod Running
+```
+
+---
+
+### Q2. Difference between Deployment and StatefulSet?
+
+| Deployment | StatefulSet |
+|-------------|--------------|
+| Stateless Apps | Stateful Apps |
+| Random Pod Names | Stable Names |
+| No Persistent Identity | Persistent Identity |
+
+---
+
+### Q3. What is a Service?
+
+Provides stable access to pods.
+
+Types:
+- ClusterIP
+- NodePort
+- LoadBalancer
+- ExternalName
+
+---
+
+### Q4. What is Ingress?
+
+Layer 7 routing component.
+
+```text
+Internet
+   ↓
+Ingress
+   ↓
+Service
+   ↓
+Pod
+```
+
+---
+
+### Q5. Difference between ConfigMap and Secret?
+
+| ConfigMap | Secret |
+|------------|------------|
+| Non-sensitive | Sensitive |
+| Plain Text | Base64 Encoded |
+
+---
+
+### Q6. What is HPA?
+
+Horizontal Pod Autoscaler
+
+```bash
+kubectl autoscale deployment app --cpu-percent=70 --min=2 --max=10
+```
+
+---
+
+### Q7. How do you troubleshoot a crashing pod?
+
+```bash
+kubectl get pods
+```
+
+```bash
+kubectl describe pod <pod-name>
+```
+
+```bash
+kubectl logs <pod-name>
+```
+
+---
+
+### Q8. What is a Readiness Probe?
+
+Determines whether pod can receive traffic.
+
+---
+
+### Q9. What is a Liveness Probe?
+
+Checks if container is healthy.
+
+---
+
+### Q10. Difference between Rolling Update and Recreate?
+
+| Rolling | Recreate |
+|------------|------------|
+| Zero downtime | Downtime |
+| Gradual | Full restart |
+
+---
+
+# Terraform
+
+## Basic Questions
+
+### Q1. What is Terraform?
+
+Infrastructure as Code (IaC) tool by :contentReference[oaicite:0]{index=0}.
+
+---
+
+### Q2. What is Terraform State?
+
+Tracks infrastructure resources.
+
+```bash
+terraform.tfstate
+```
+
+---
+
+### Q3. What is Remote Backend?
+
+Stores state remotely.
+
+Example:
+
+- AWS S3
+- Azure Storage
+- GCS
+
+---
+
+### Q4. Why use DynamoDB with S3 Backend?
+
+**Answer**
+State Locking.
+
+Prevents multiple users from modifying state simultaneously.
+
+---
+
+### Q5. Terraform Workflow?
+
+```bash
+terraform init
+```
+
+```bash
+terraform validate
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+```bash
+terraform destroy
+```
+
+---
+
+### Q6. Difference between Count and For_Each?
+
+**Count**
+
+```hcl
+count = 3
+```
+
+Index based.
+
+**For_Each**
+
+```hcl
+for_each = var.instances
+```
+
+Key based.
+
+---
+
+# AWS
+
+## Most Asked Questions
+
+### Q1. Difference between Security Group and NACL?
+
+| Security Group | NACL |
+|----------------|-------|
+| Instance Level | Subnet Level |
+| Stateful | Stateless |
+
+---
+
+### Q2. Difference between ALB and NLB?
+
+| ALB | NLB |
+|-------|-------|
+| Layer 7 | Layer 4 |
+| HTTP/HTTPS | TCP/UDP |
+
+---
+
+### Q3. What is IAM Role?
+
+Temporary permissions assigned to AWS resources.
+
+---
+
+### Q4. Explain VPC.
+
+Virtual Private Cloud.
+
+Components:
+- Subnet
+- Route Table
+- IGW
+- NAT Gateway
+- Security Group
+- NACL
+
+---
+
+### Q5. Explain EKS Architecture.
+
+```text
+Control Plane (Managed by AWS)
+        ↓
+Worker Nodes
+        ↓
+Pods
+        ↓
+Services
+```
+
+---
+
+# Monitoring (Prometheus + Grafana)
+
+### Q1. What is Prometheus?
+
+Metrics collection and monitoring system.
+
+---
+
+### Q2. What are Prometheus Components?
+
+- Prometheus Server
+- Exporters
+- Alertmanager
+- TSDB
+
+---
+
+### Q3. What is Grafana?
+
+Visualization platform for metrics.
+
+---
+
+### Q4. Difference between Monitoring and Logging?
+
+| Monitoring | Logging |
+|-------------|-----------|
+| Metrics | Events |
+| Prometheus | ELK/Loki |
+
+---
+
+### Q5. Key Golden Signals?
+
+1. Latency
+2. Traffic
+3. Errors
+4. Saturation
+
+---
+
+# DevOps Scenario-Based Questions
+
+### Scenario 1
+
+Production website is down. What will you check first?
+
+**Answer**
+
+1. Monitoring alerts
+2. Application logs
+3. Pod status
+4. Node health
+5. Database connectivity
+6. Load balancer health
+
+---
+
+### Scenario 2
+
+Kubernetes pod is CrashLoopBackOff.
+
+**Answer**
+
+```bash
+kubectl logs pod-name
+```
+
+```bash
+kubectl describe pod pod-name
+```
+
+Check:
+- Environment Variables
+- Secrets
+- Memory Limits
+- Startup Errors
+
+---
+
+### Scenario 3
+
+Terraform Apply Failed.
+
+**Answer**
+
+1. Read error logs.
+2. Check state file.
+3. Verify IAM permissions.
+4. Verify resource dependencies.
+5. Run:
+
+```bash
+terraform plan
+```
+
+---
+
+### Scenario 4
+
+Jenkins Pipeline Failed.
+
+**Answer**
+
+Check:
+- Console Output
+- Agent Status
+- Credentials
+- Git Access
+- Build Logs
+
+---
+
+# Frequently Asked HR Questions
+
+### Tell me about yourself.
+
+### Explain your current project.
+
+### What CI/CD pipeline have you built?
+
+### How do you deploy applications on Kubernetes?
+
+### How do you handle production incidents?
+
+### What is your biggest achievement?
+
+### Why are you changing your job?
+
+### What salary are you expecting?
+
+### Why should we hire you?
+
+---
+
+# Focus Areas for 2–3 YOE DevOps Engineer
+
+✅ Linux  
+✅ Git  
+✅ Jenkins  
+✅ Docker  
+✅ Kubernetes  
+✅ Terraform  
+✅ AWS  
+✅ Prometheus  
+✅ Grafana  
+✅ CI/CD  
+✅ Troubleshooting  
+✅ Production Support  
+✅ Incident Management  
+✅ Monitoring & Logging  
+✅ DevSecOps Basics
+
+
+# DevOps Engineer Interview Questions (2–3 Years Experience)
+## Tool-Wise Interview Preparation Guide
+
+---
+
+# Linux
+
+## Basic Questions
+
+### Q1. What happens when you run a command in Linux?
+
+**Answer:**
+1. Shell accepts the command.
+2. Searches executable in PATH variable.
+3. Creates a process.
+4. Kernel allocates resources.
+5. Process executes and returns output.
+
+---
+
+### Q2. Difference between Process and Thread?
+
+| Process | Thread |
+|-----------|-----------|
+| Independent execution unit | Lightweight execution unit |
+| Own memory space | Shared memory |
+| Higher overhead | Lower overhead |
+
+---
+
+### Q3. How do you find top memory-consuming processes?
+
+```bash
+top
+```
+
+```bash
+htop
+```
+
+```bash
+ps aux --sort=-%mem | head
+```
+
+---
+
+### Q4. How do you identify which process is using port 8080?
+
+```bash
+netstat -tulnp | grep 8080
+```
+
+```bash
+ss -tulnp | grep 8080
+```
+
+```bash
+lsof -i :8080
+```
+
+---
+
+### Q5. How do you check disk usage?
+
+```bash
+df -h
+```
+
+```bash
+du -sh *
+```
+
+---
+
+### Q6. Difference between Soft Link and Hard Link?
+
+| Soft Link | Hard Link |
+|------------|------------|
+| Points to file path | Points to inode |
+| Can cross filesystem | Cannot cross filesystem |
+| Broken if source deleted | Remains valid |
+
+---
+
+# Git
+
+## Basic Questions
+
+### Q1. Difference between Git Fetch and Git Pull?
+
+**Git Fetch**
+```bash
+git fetch
+```
+
+Downloads changes but doesn't merge.
+
+**Git Pull**
+```bash
+git pull
+```
+
+Downloads + merges.
+
+---
+
+### Q2. Difference between Merge and Rebase?
+
+**Merge**
+```bash
+git merge feature
+```
+
+Creates merge commit.
+
+**Rebase**
+```bash
+git rebase main
+```
+
+Maintains linear history.
+
+---
+
+### Q3. How do you revert a bad commit?
+
+```bash
+git revert <commit-id>
+```
+
+---
+
+### Q4. Difference between Reset and Revert?
+
+| Reset | Revert |
+|---------|---------|
+| Removes history | Preserves history |
+| Dangerous | Safe |
+
+---
+
+### Q5. How do you resolve merge conflicts?
+
+1. Pull latest changes.
+2. Open conflicted files.
+3. Fix manually.
+4. Add file.
+
+```bash
+git add .
+```
+
+5. Commit changes.
+
+---
+
+# Jenkins
+
+## Basic Questions
+
+### Q1. What is Jenkins?
+
+**Answer:**
+Open-source CI/CD automation server used to automate build, test, and deployment pipelines.
+
+---
+
+### Q2. Explain Jenkins Pipeline.
+
+**Declarative Pipeline Example**
+
+```groovy
+pipeline {
+ agent any
+
+ stages {
+
+  stage('Build'){
+   steps{
+    echo "Building"
+   }
+  }
+
+  stage('Test'){
+   steps{
+    echo "Testing"
+   }
+  }
+
+  stage('Deploy'){
+   steps{
+    echo "Deploying"
+   }
+  }
+
+ }
+}
+```
+
+---
+
+### Q3. What is the difference between Declarative and Scripted Pipeline?
+
+| Declarative | Scripted |
+|-------------|------------|
+| Easier | Flexible |
+| Structured | Full Groovy |
+| Recommended | Advanced use cases |
+
+---
+
+### Q4. How do you secure Jenkins?
+
+**Answer**
+- RBAC
+- LDAP/SAML
+- HTTPS
+- Credentials Store
+- Secret Management
+- Backup
+
+---
+
+### Q5. How do you trigger Jenkins automatically?
+
+**Methods**
+- Git Webhooks
+- Poll SCM
+- Cron Trigger
+
+---
+
+# Docker
+
+## Basic Questions
+
+### Q1. What is Docker?
+
+Containerization platform used to package applications and dependencies.
+
+---
+
+### Q2. Difference between VM and Container?
+
+| VM | Container |
+|------|------|
+| Own OS | Shares Host OS |
+| Heavy | Lightweight |
+| Slow Startup | Fast Startup |
+
+---
+
+### Q3. Explain Docker Lifecycle.
+
+```text
+Dockerfile
+    ↓
+Docker Image
+    ↓
+Docker Container
+    ↓
+Running Application
+```
+
+---
+
+### Q4. Difference between CMD and ENTRYPOINT?
+
+| CMD | ENTRYPOINT |
+|--------|--------|
+| Default command | Fixed executable |
+| Easily overridden | Not easily overridden |
+
+---
+
+### Q5. How do you reduce Docker image size?
+
+**Answer**
+- Multi-stage builds
+- Alpine images
+- Remove cache
+- Minimize layers
+
+---
+
+### Q6. Explain Docker Networking.
+
+Types:
+- Bridge
+- Host
+- Overlay
+- None
+
+---
+
+### Q7. What is Docker Volume?
+
+Persistent storage mechanism for containers.
+
+```bash
+docker volume create myvolume
+```
+
+---
+
+# Kubernetes
+
+## Most Important Section
+
+### Q1. What happens when you create a Pod?
+
+```text
+kubectl apply
+      ↓
+API Server
+      ↓
+etcd
+      ↓
+Scheduler
+      ↓
+Node
+      ↓
+Kubelet
+      ↓
+Container Runtime
+      ↓
+Pod Running
+```
+
+---
+
+### Q2. Difference between Deployment and StatefulSet?
+
+| Deployment | StatefulSet |
+|-------------|--------------|
+| Stateless Apps | Stateful Apps |
+| Random Pod Names | Stable Names |
+| No Persistent Identity | Persistent Identity |
+
+---
+
+### Q3. What is a Service?
+
+Provides stable access to pods.
+
+Types:
+- ClusterIP
+- NodePort
+- LoadBalancer
+- ExternalName
+
+---
+
+### Q4. What is Ingress?
+
+Layer 7 routing component.
+
+```text
+Internet
+   ↓
+Ingress
+   ↓
+Service
+   ↓
+Pod
+```
+
+---
+
+### Q5. Difference between ConfigMap and Secret?
+
+| ConfigMap | Secret |
+|------------|------------|
+| Non-sensitive | Sensitive |
+| Plain Text | Base64 Encoded |
+
+---
+
+### Q6. What is HPA?
+
+Horizontal Pod Autoscaler
+
+```bash
+kubectl autoscale deployment app --cpu-percent=70 --min=2 --max=10
+```
+
+---
+
+### Q7. How do you troubleshoot a crashing pod?
+
+```bash
+kubectl get pods
+```
+
+```bash
+kubectl describe pod <pod-name>
+```
+
+```bash
+kubectl logs <pod-name>
+```
+
+---
+
+### Q8. What is a Readiness Probe?
+
+Determines whether pod can receive traffic.
+
+---
+
+### Q9. What is a Liveness Probe?
+
+Checks if container is healthy.
+
+---
+
+### Q10. Difference between Rolling Update and Recreate?
+
+| Rolling | Recreate |
+|------------|------------|
+| Zero downtime | Downtime |
+| Gradual | Full restart |
+
+---
+
+# Terraform
+
+## Basic Questions
+
+### Q1. What is Terraform?
+
+Infrastructure as Code (IaC) tool by :contentReference[oaicite:0]{index=0}.
+
+---
+
+### Q2. What is Terraform State?
+
+Tracks infrastructure resources.
+
+```bash
+terraform.tfstate
+```
+
+---
+
+### Q3. What is Remote Backend?
+
+Stores state remotely.
+
+Example:
+
+- AWS S3
+- Azure Storage
+- GCS
+
+---
+
+### Q4. Why use DynamoDB with S3 Backend?
+
+**Answer**
+State Locking.
+
+Prevents multiple users from modifying state simultaneously.
+
+---
+
+### Q5. Terraform Workflow?
+
+```bash
+terraform init
+```
+
+```bash
+terraform validate
+```
+
+```bash
+terraform plan
+```
+
+```bash
+terraform apply
+```
+
+```bash
+terraform destroy
+```
+
+---
+
+### Q6. Difference between Count and For_Each?
+
+**Count**
+
+```hcl
+count = 3
+```
+
+Index based.
+
+**For_Each**
+
+```hcl
+for_each = var.instances
+```
+
+Key based.
+
+---
+
+# AWS
+
+## Most Asked Questions
+
+### Q1. Difference between Security Group and NACL?
+
+| Security Group | NACL |
+|----------------|-------|
+| Instance Level | Subnet Level |
+| Stateful | Stateless |
+
+---
+
+### Q2. Difference between ALB and NLB?
+
+| ALB | NLB |
+|-------|-------|
+| Layer 7 | Layer 4 |
+| HTTP/HTTPS | TCP/UDP |
+
+---
+
+### Q3. What is IAM Role?
+
+Temporary permissions assigned to AWS resources.
+
+---
+
+### Q4. Explain VPC.
+
+Virtual Private Cloud.
+
+Components:
+- Subnet
+- Route Table
+- IGW
+- NAT Gateway
+- Security Group
+- NACL
+
+---
+
+### Q5. Explain EKS Architecture.
+
+```text
+Control Plane (Managed by AWS)
+        ↓
+Worker Nodes
+        ↓
+Pods
+        ↓
+Services
+```
+
+---
+
+# Monitoring (Prometheus + Grafana)
+
+### Q1. What is Prometheus?
+
+Metrics collection and monitoring system.
+
+---
+
+### Q2. What are Prometheus Components?
+
+- Prometheus Server
+- Exporters
+- Alertmanager
+- TSDB
+
+---
+
+### Q3. What is Grafana?
+
+Visualization platform for metrics.
+
+---
+
+### Q4. Difference between Monitoring and Logging?
+
+| Monitoring | Logging |
+|-------------|-----------|
+| Metrics | Events |
+| Prometheus | ELK/Loki |
+
+---
+
+### Q5. Key Golden Signals?
+
+1. Latency
+2. Traffic
+3. Errors
+4. Saturation
+
+---
+
+# DevOps Scenario-Based Questions
+
+### Scenario 1
+
+Production website is down. What will you check first?
+
+**Answer**
+
+1. Monitoring alerts
+2. Application logs
+3. Pod status
+4. Node health
+5. Database connectivity
+6. Load balancer health
+
+---
+
+### Scenario 2
+
+Kubernetes pod is CrashLoopBackOff.
+
+**Answer**
+
+```bash
+kubectl logs pod-name
+```
+
+```bash
+kubectl describe pod pod-name
+```
+
+Check:
+- Environment Variables
+- Secrets
+- Memory Limits
+- Startup Errors
+
+---
+
+### Scenario 3
+
+Terraform Apply Failed.
+
+**Answer**
+
+1. Read error logs.
+2. Check state file.
+3. Verify IAM permissions.
+4. Verify resource dependencies.
+5. Run:
+
+```bash
+terraform plan
+```
+
+---
+
+### Scenario 4
+
+Jenkins Pipeline Failed.
+
+**Answer**
+
+Check:
+- Console Output
+- Agent Status
+- Credentials
+- Git Access
+- Build Logs
+
+---
+
+# Frequently Asked HR Questions
+
+### Tell me about yourself.
+
+### Explain your current project.
+
+### What CI/CD pipeline have you built?
+
+### How do you deploy applications on Kubernetes?
+
+### How do you handle production incidents?
+
+### What is your biggest achievement?
+
+### Why are you changing your job?
+
+### What salary are you expecting?
+
+### Why should we hire you?
+
+---
+
+# Focus Areas for 2–3 YOE DevOps Engineer
+
+✅ Linux  
+✅ Git  
+✅ Jenkins  
+✅ Docker  
+✅ Kubernetes  
+✅ Terraform  
+✅ AWS  
+✅ Prometheus  
+✅ Grafana  
+✅ CI/CD  
+✅ Troubleshooting  
+✅ Production Support  
+✅ Incident Management  
+✅ Monitoring & Logging  
+✅ DevSecOps Basics
