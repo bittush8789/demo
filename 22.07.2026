@@ -1,0 +1,78 @@
+1. Introduction to Kubernetes
+2. Kubernetes Architecture Using Examples
+3. Kubernetes Pods
+4. Kubernetes Deployment | ReplicaSets
+5. Kubernetes Services | Discovery | Load Balancing | Networking
+6. Kubernetes Ingress
+7. Introduction to K8s RBAC
+8. ConfigMaps & Secrets | How to Use ConfigMaps & Secrets Inside Pods
+9. Kubernetes Custom Resources (CRD)
+10. Kubernetes Monitoring Using Prometheus & Grafana
+11. Kubernetes Deployment Strategies
+12. Most Common Kubernetes Local Issues | Kubectl Port Forwarding
+13. Kustomize
+14. Kubernetes in Docker (KIND) Tutorial
+15. Helm
+16. Amazon EKS (Elastic Kubernetes Service)
+
+------------------------------------------------------------------------
+
+Developer
+    ↓
+GitHub
+    ↓
+GitHub Actions (CI/CD)
+    ↓
+SonarQube (Code Quality)
+    ↓
+Gitleaks (Secret Scanning)
+    ↓
+Trivy (Image & Dependency Scanning)
+    ↓
+Docker Build
+    ↓
+AWS ECR
+    ↓
+Terraform
+    ↓
+AWS Infrastructure
+    ├── VPC
+    ├── IAM
+    ├── S3
+    ├── RDS PostgreSQL
+    ├── EKS
+    └── ECR
+    ↓
+DVC + AWS S3
+    ↓
+Apache Airflow / Kubeflow Pipelines
+    ↓
+Feature Engineering
+    ↓
+Feast Feature Store
+    ↓
+Model Training
+    ↓
+MLflow Experiment Tracking
+    ↓
+MLflow Model Registry
+    ↓
+Dockerize Model
+    ↓
+AWS ECR
+    ↓
+ArgoCD (GitOps)
+    ↓
+Kubernetes (AWS EKS)
+    ↓
+KServe
+    ↓
+Inference API
+    ↓
+Prometheus
+    ↓
+Grafana
+    ↓
+Loki / ELK
+    ↓
+Evidently AI
