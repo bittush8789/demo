@@ -1,78 +1,487 @@
-1. Introduction to Kubernetes
-2. Kubernetes Architecture Using Examples
-3. Kubernetes Pods
-4. Kubernetes Deployment | ReplicaSets
-5. Kubernetes Services | Discovery | Load Balancing | Networking
-6. Kubernetes Ingress
-7. Introduction to K8s RBAC
-8. ConfigMaps & Secrets | How to Use ConfigMaps & Secrets Inside Pods
-9. Kubernetes Custom Resources (CRD)
-10. Kubernetes Monitoring Using Prometheus & Grafana
-11. Kubernetes Deployment Strategies
-12. Most Common Kubernetes Local Issues | Kubectl Port Forwarding
-13. Kustomize
-14. Kubernetes in Docker (KIND) Tutorial
-15. Helm
-16. Amazon EKS (Elastic Kubernetes Service)
+# MLOps Roadmap
 
-------------------------------------------------------------------------
+## Phase 1: Programming & Software Engineering
+- Python
+- OOPs
+- Data Structures & Algorithms
+- APIs (REST)
+- Testing (PyTest)
+- Virtual Environments
+- Package Management (pip, poetry)
 
-Developer
-    ↓
-GitHub
-    ↓
-GitHub Actions (CI/CD)
-    ↓
-SonarQube (Code Quality)
-    ↓
-Gitleaks (Secret Scanning)
-    ↓
-Trivy (Image & Dependency Scanning)
-    ↓
-Docker Build
-    ↓
-AWS ECR
-    ↓
-Terraform
-    ↓
-AWS Infrastructure
-    ├── VPC
-    ├── IAM
-    ├── S3
-    ├── RDS PostgreSQL
-    ├── EKS
-    └── ECR
-    ↓
+---
+
+## Phase 2: Linux & DevOps Fundamentals
+- Linux
+- Shell Scripting
+- Git
+- GitHub
+- Networking Basics
+- Docker
+- Docker Compose
+
+---
+
+## Phase 3: Data Engineering Fundamentals
+- SQL
+- Data Warehousing
+- ETL/ELT
+- Data Validation
+- Data Versioning
+- Data Pipelines
+
+---
+
+## Phase 4: Machine Learning Fundamentals
+- Statistics
+- Probability
+- Feature Engineering
+- Supervised Learning
+- Unsupervised Learning
+- Model Evaluation
+- Scikit-Learn
+
+---
+
+## Phase 5: Experiment Tracking
+- MLflow
+- Weights & Biases
+- Experiment Management
+- Hyperparameter Tracking
+- Model Comparison
+
+---
+
+## Phase 6: Data Version Control
+- DVC
+- Git + DVC
+- S3 Storage
+- Dataset Management
+- Pipeline Versioning
+
+---
+
+## Phase 7: CI/CD for ML
+- GitHub Actions
+- Jenkins
+- Automated Testing
+- Model Validation
+- CI Pipelines
+- CD Pipelines
+
+---
+
+## Phase 8: Model Registry
+- MLflow Registry
+- Model Versioning
+- Stage Transitions
+- Model Governance
+
+---
+
+## Phase 9: Workflow Orchestration
+- Kubeflow Pipelines
+- Apache Airflow
+- Prefect
+- DAGs
+- Pipeline Automation
+
+---
+
+## Phase 10: Model Serving
+- FastAPI
+- Flask
+- BentoML
+- KServe
+- REST APIs
+- Batch Inference
+- Real-Time Inference
+
+---
+
+## Phase 11: Kubernetes for MLOps
+- Kubernetes Architecture
+- Kind Cluster
+- Pods
+- Deployments
+- Services
+- Ingress
+- ConfigMaps
+- Secrets
+- StatefulSets
+- Helm
+
+---
+
+## Phase 12: Cloud for MLOps
+- AWS IAM
+- AWS EC2
+- AWS S3
+- AWS ECR
+- AWS EKS
+- AWS RDS
+- AWS CloudWatch
+
+---
+
+## Phase 13: Monitoring & Observability
+- Prometheus
+- Grafana
+- Loki
+- ELK Stack
+- OpenTelemetry
+- Model Monitoring
+
+---
+
+## Phase 14: ML Monitoring
+- Data Drift
+- Concept Drift
+- Model Drift
+- Evidently AI
+- Performance Monitoring
+- Alerting
+
+---
+
+## Phase 15: Security & Governance
+- RBAC
+- Secrets Management
+- Model Governance
+- Compliance
+- Audit Logging
+
+---
+
+## Phase 16: Production MLOps Projects
+- End-to-End ML Pipeline
+- DVC + S3 Pipeline
+- MLflow Tracking Platform
+- Kubeflow Training Pipeline
+- KServe Model Deployment
+- Kubernetes ML Platform
+- Real-Time Inference System
+- Enterprise MLOps Platform
+
+---
+
+# MLOps Tool Stack
+
+```text
+Python
+↓
+Linux
+↓
+Git & GitHub
+↓
+Docker
+↓
+SQL
+↓
+Machine Learning
+↓
+MLflow
+↓
 DVC + AWS S3
-    ↓
-Apache Airflow / Kubeflow Pipelines
-    ↓
-Feature Engineering
-    ↓
-Feast Feature Store
-    ↓
-Model Training
-    ↓
-MLflow Experiment Tracking
-    ↓
-MLflow Model Registry
-    ↓
-Dockerize Model
-    ↓
-AWS ECR
-    ↓
-ArgoCD (GitOps)
-    ↓
-Kubernetes (AWS EKS)
-    ↓
+↓
+GitHub Actions
+↓
+Kubeflow
+↓
+Model Registry
+↓
+FastAPI
+↓
 KServe
-    ↓
-Inference API
-    ↓
+↓
+Kubernetes (Kind)
+↓
+AWS EKS
+↓
 Prometheus
-    ↓
+↓
 Grafana
-    ↓
+↓
 Loki / ELK
-    ↓
+↓
 Evidently AI
+
+# LLMOps Roadmap
+
+## Phase 1: Programming Fundamentals
+- Python
+- OOPs
+- Data Structures
+- APIs (REST)
+- JSON
+- Async Programming
+
+---
+
+## Phase 2: Linux & DevOps Fundamentals
+- Linux
+- Shell Scripting
+- Git
+- GitHub
+- Networking
+- Docker
+
+---
+
+## Phase 3: Machine Learning Fundamentals
+- Statistics
+- Machine Learning Basics
+- Deep Learning Basics
+- PyTorch
+- Transformers
+
+---
+
+## Phase 4: LLM Fundamentals
+- Tokenization
+- Embeddings
+- Attention Mechanism
+- Transformer Architecture
+- Context Window
+- Positional Encoding
+- Fine-Tuning
+- Quantization
+- Hallucinations
+
+---
+
+## Phase 5: Prompt Engineering
+- Zero-Shot Prompting
+- Few-Shot Prompting
+- Chain of Thought
+- ReAct
+- Structured Output
+- Function Calling
+- Prompt Evaluation
+
+---
+
+## Phase 6: Embeddings & Vector Databases
+- Embedding Models
+- Vector Search
+- Similarity Search
+- Semantic Search
+- Hybrid Search
+- Metadata Filtering
+
+### Tools
+- FAISS
+- ChromaDB
+- Pinecone
+- Weaviate
+- Milvus
+- Qdrant
+
+---
+
+## Phase 7: RAG (Retrieval-Augmented Generation)
+- Document Loading
+- Text Chunking
+- Embedding Generation
+- Vector Indexing
+- Retrieval Pipelines
+- Re-Ranking
+- Hybrid Retrieval
+- Context Management
+
+### Frameworks
+- LangChain
+- LlamaIndex
+- Haystack
+
+---
+
+## Phase 8: LLM Application Development
+- FastAPI
+- LangChain
+- LangGraph
+- LlamaIndex
+- AI Agents
+- Multi-Agent Systems
+- Tool Calling
+
+---
+
+## Phase 9: Evaluation & Testing
+- LLM Evaluation
+- RAG Evaluation
+- Prompt Evaluation
+- Hallucination Detection
+- Benchmarking
+- Human Feedback
+
+### Tools
+- Ragas
+- DeepEval
+- LangSmith
+- TruLens
+
+---
+
+## Phase 10: Fine-Tuning & Custom Models
+- PEFT
+- LoRA
+- QLoRA
+- SFT
+- Instruction Tuning
+- Model Merging
+
+### Frameworks
+- Hugging Face
+- PEFT
+- TRL
+- Unsloth
+
+---
+
+## Phase 11: Model Serving & Inference
+- Model Serving
+- Inference APIs
+- Batch Inference
+- Streaming Inference
+- Distributed Inference
+- GPU Optimization
+
+### Tools
+- vLLM
+- TGI
+- Triton Inference Server
+- Ollama
+
+---
+
+## Phase 12: Kubernetes for LLMOps
+- Kind Cluster
+- Kubernetes
+- Pods
+- Deployments
+- Services
+- Ingress
+- ConfigMaps
+- Secrets
+- Helm
+
+---
+
+## Phase 13: GPU Infrastructure
+- CUDA
+- GPU Scheduling
+- NVIDIA Runtime
+- GPU Sharing
+- Multi-GPU Inference
+- Distributed Serving
+
+### Tools
+- NVIDIA GPU Operator
+- DCGM Exporter
+- Karpenter
+- Ray
+
+---
+
+## Phase 14: Cloud & AI Infrastructure
+- AWS EC2 GPU
+- AWS S3
+- AWS ECR
+- AWS EKS
+- IAM
+- VPC
+- Load Balancers
+
+---
+
+## Phase 15: Observability & Monitoring
+- Prompt Monitoring
+- Token Monitoring
+- Latency Monitoring
+- Cost Monitoring
+- GPU Monitoring
+- Model Monitoring
+
+### Tools
+- Prometheus
+- Grafana
+- Loki
+- OpenTelemetry
+- LangSmith
+
+---
+
+## Phase 16: Security & Governance
+- RBAC
+- Secrets Management
+- Guardrails
+- Content Filtering
+- PII Protection
+- AI Governance
+
+---
+
+## Phase 17: Production LLMOps Projects
+- Production RAG Platform
+- Enterprise Knowledge Assistant
+- AI Agent Platform
+- Multi-Agent System
+- Internal Copilot
+- LLM Gateway
+- AI Platform on Kubernetes
+- GPU Inference Platform
+- Enterprise LLMOps Platform
+
+---
+
+# LLMOps Tool Stack
+
+```text
+Python
+↓
+Linux
+↓
+Git & GitHub
+↓
+Docker
+↓
+PyTorch
+↓
+Transformers
+↓
+Prompt Engineering
+↓
+Embeddings
+↓
+FAISS / ChromaDB / Pinecone
+↓
+RAG
+↓
+LangChain / LlamaIndex
+↓
+LangGraph
+↓
+Ragas / DeepEval
+↓
+LoRA / QLoRA
+↓
+vLLM
+↓
+FastAPI
+↓
+Kubernetes (Kind)
+↓
+GPU Infrastructure
+↓
+AWS EKS
+↓
+Prometheus
+↓
+Grafana
+↓
+LangSmith
+↓
+Production LLMOps
+```
+```
