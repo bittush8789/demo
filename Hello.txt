@@ -1,6 +1,193 @@
-sahibasingh2120@gmail.com
-7759030165
+# AI Forward Deployed Engineer (AI FDE) Roadmap
 
-sahibasingh2120@gmail.com
+## Phase 1: Business Foundations    Done   01 Augest 
+- Business Analysis
+- Problem Discovery
+- Requirement Gathering
+- Stakeholder Management
+- Process Mapping
 
-15853
+---
+
+## Phase 2: Industry Knowledge
+- Healthcare
+- Finance
+- Insurance
+- Retail
+- Manufacturing
+
+---
+
+## Phase 3: Programming & Software Engineering
+- Python
+- Data Structures & Algorithms
+- Object-Oriented Programming (OOP)
+- APIs
+- SQL
+- System Design
+- Integration Patterns
+
+---
+
+## Phase 4: Mathematics for AI
+- Linear Algebra
+- Statistics
+- Probability
+- Calculus
+
+---
+
+## Phase 5: Data Engineering
+- Data Collection
+- Data Cleaning
+- Data Processing
+- Feature Engineering
+- Data Pipelines
+
+---
+
+## Phase 6: Machine Learning
+- Supervised Learning
+- Unsupervised Learning
+- Model Evaluation
+- Feature Selection
+- Hyperparameter Tuning
+
+---
+
+## Phase 7: Deep Learning
+- Neural Networks
+- CNNs
+- RNNs
+- Transformers
+- Transfer Learning
+
+---
+
+## Phase 8: Generative AI & LLMs
+- LLM Fundamentals
+- Prompt Engineering
+- Embeddings
+- Fine-Tuning
+- AI Use Case Design
+
+---
+
+## Phase 9: RAG Engineering
+- Document Processing
+- Chunking
+- Embedding Models
+- Vector Databases
+- Vector Search
+- Hybrid Search
+- Re-Ranking
+- Retrieval Pipelines
+- RAG Evaluation
+
+---
+
+## Phase 10: Agentic AI
+- AI Agents
+- Multi-Agent Systems
+- Tool Calling
+- Workflow Automation
+- Agent Orchestration
+
+---
+
+## Phase 11: AI Product Development
+- FastAPI
+- LangChain
+- LlamaIndex
+- Streamlit
+- Frontend Basics
+- Product Integration
+
+---
+
+## Phase 12: AI Solution Architecture
+- Use Case Identification
+- AI Architecture
+- Solution Blueprinting
+- Technical Feasibility
+- ROI Analysis
+
+---
+
+## Phase 13: MLOps & LLMOps
+- Git
+- Docker
+- Kubernetes
+- CI/CD
+- MLflow
+- Kubeflow
+- Model Registry
+- Model Serving
+- KServe
+- vLLM
+
+---
+
+## Phase 14: Cloud & AI Infrastructure
+- AWS
+- Azure
+- GCP
+- Networking
+- GPU Computing
+- Distributed Training
+
+---
+
+## Phase 15: Enterprise AI Integration
+- CRM Integration
+- ERP Integration
+- API Integration
+- Data Platforms
+- Enterprise Workflows
+
+---
+
+## Phase 16: AI Security & Governance
+- AI Security
+- Compliance
+- Privacy
+- Guardrails
+- Responsible AI
+- AI Governance
+
+---
+
+## Phase 17: Monitoring & Reliability
+- Monitoring
+- Observability
+- Performance Metrics
+- Cost Optimization
+- Reliability Engineering
+- Continuous Improvement
+
+---
+
+## Phase 18: Customer Deployment & Adoption
+- Solution Delivery
+- User Training
+- Change Management
+- Adoption Strategy
+- Success Metrics
+
+---
+
+## Phase 19: Business Impact
+- KPIs
+- ROI Tracking
+- Cost Analysis
+- Business Value Measurement
+- Continuous Optimization
+
+---
+
+## Phase 20: Leadership & Consulting
+- Executive Communication
+- AI Strategy
+- Technical Consulting
+- Team Leadership
+- Enterprise Transformation
