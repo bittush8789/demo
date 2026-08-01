@@ -1,386 +1,223 @@
-# Forward Deployed Engineer (FDE) Roadmap
+# Full Stack AI Engineer Roadmap
 
-## Phase 1: Programming & Software Engineering  11 
+## Phase 1: Programming Foundations
 - Python
-- TypeScript
-- JavaScript
-- Java Basics
-- Go Basics
-- OOP
-- Design Patterns
-- Data Structures
-- Algorithms
-- Multithreading
-- Async Programming
-- Unit Testing
-- Integration Testing
-- Debugging           --> Sat
+- Data Structures & Algorithms
+- Object-Oriented Programming (OOP)
+- Git
+- Linux
+- SQL
+- APIs
 
 ---
 
-## Phase 2: Backend Engineering  Sunday  12 
+## Phase 2: Mathematics & Statistics
+- Linear Algebra
+- Probability
+- Statistics
+- Calculus
+- Optimization
+
+---
+
+## Phase 3: Software Engineering
+- Design Patterns
+- System Design
+- Distributed Systems
+- Testing
+- Debugging
+- Integration Patterns
+
+---
+
+## Phase 4: Data Engineering
+- Data Collection
+- Data Cleaning
+- Data Processing
+- Feature Engineering
+- Data Pipelines
+- Data Warehousing
+
+---
+
+## Phase 5: Machine Learning
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+- Model Evaluation
+- Feature Engineering
+- Hyperparameter Tuning
+
+---
+
+## Phase 6: Deep Learning
+- Neural Networks
+- CNNs
+- RNNs
+- Transformers
+- Transfer Learning
+- Multimodal Models
+
+---
+
+## Phase 7: Generative AI
+- LLM Fundamentals
+- Prompt Engineering
+- Embeddings
+- Fine-Tuning
+- Synthetic Data
+- AI Safety
+
+---
+
+## Phase 8: RAG Engineering
+- Document Processing
+- Chunking
+- Embedding Models
+- Vector Databases
+- Retrieval Pipelines
+- Hybrid Search
+- Re-Ranking
+- Evaluation
+
+---
+
+## Phase 9: Agentic AI
+- AI Agents
+- Multi-Agent Systems
+- Tool Calling
+- MCP (Model Context Protocol)
+- Workflow Automation
+- Agent Orchestration
+
+---
+
+## Phase 10: AI Application Development
+- FastAPI
+- Streamlit
+- Gradio
+- LangChain
+- LangGraph
+- LlamaIndex
+
+---
+
+## Phase 11: Frontend Development
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- React
+- Next.js
+
+---
+
+## Phase 12: Backend Development
 - REST APIs
 - GraphQL
-- FastAPI
-- Express.js
 - Authentication
-- OAuth
-- JWT
-- API Design
+- Authorization
 - WebSockets
-- gRPC
+- Microservices
 
 ---
 
-## Phase 3: Databases   09 
+## Phase 13: Databases & Storage
 - PostgreSQL
-- MySQL
 - MongoDB
 - Redis
-- DynamoDB
-- SQL Optimization
-- Indexing
-- Transactions
+- Elasticsearch
+- Object Storage
+- Vector Databases
 
 ---
 
-## Phase 4: Linux & Networking 08 
-- Linux
-- Bash
-- SSH
-- DNS
-- HTTP
-- HTTPS
-- TCP/IP
-- Load Balancer
-- Reverse Proxy
-- Nginx
-
----
-
-## Phase 5: Cloud Engineering   10 
-### AWS
-- IAM
-- VPC
-- EC2
-- S3
-- ALB
-- Route53
-- RDS
-- DynamoDB
-- Lambda
-- EKS
-- ECS
-- CloudWatch
-
----
-
-## Phase 6: Infrastructure Engineering  11 
+## Phase 14: MLOps & LLMOps
+- Git
 - Docker
 - Kubernetes
-- Helm
-- Kustomize
-- Terraform
-- Ansible
-- ArgoCD
-- GitOps
-
----
-
-## Phase 7: CI/CD 12 
-- Jenkins
-- GitHub Actions
-- GitLab CI
-- Blue-Green Deployment
-- Canary Deployment
-- Rollback Strategies
-
----
-
-## Phase 8: Observability  13 
-- Prometheus
-- Grafana
-- Loki
-- ELK
-- OpenTelemetry
-- Jaeger
-
----
-
-## Phase 9: DevSecOps  13 
-- Trivy
-- Checkov
-- Gitleaks
-- Vault
-- Secrets Management
-- RBAC
-
----
-
-## Phase 10: System Design  14 
-- Scalability
-- Availability
-- Reliability
-- Distributed Systems
-- CAP Theorem
-- Message Queues
-- Caching
-- Microservices
-
----
-
-## Phase 11: AI Fundamentals  15 
-- Machine Learning
-- Deep Learning
-- Transformers
-- Embeddings
-- Vector Search
-- RAG
-
----
-
-## Phase 12: LLM Engineering  16 
-- LangChain
-- LangGraph
-- LlamaIndex
-- MCP
-- A2A
-- AI Agents
-- Multi-Agent Systems
-- Prompt Engineering
-- Tool Calling
-
----
-
-## Phase 13: AI Infrastructure  17 
+- CI/CD
+- DVC
 - MLflow
 - Kubeflow
-- KServe
-- Ray
-- Ray Serve
-- BentoML
-- Triton
-- vLLM  17 
+- Model Registry
 
 ---
 
-## Phase 14: GPU Infrastructure  18 
+## Phase 15: AI Infrastructure
+- GPU Computing
 - CUDA
-- GPU Scheduling
-- NVIDIA GPU Operator
-- MIG
-- GPU Monitoring
+- Distributed Training
+- Distributed Inference
+- KServe
+- BentoML
+- vLLM
 
 ---
 
-## Phase 15: Platform Engineering  18 
-- Backstage
-- Internal Developer Platform
-- Self-Service Platform
-- Golden Paths
-- Platform APIs
+## Phase 16: Cloud Engineering
+- AWS
+- Azure
+- GCP
+- Networking
+- IAM
+- Infrastructure as Code
 
 ---
 
-## Phase 16: Enterprise Data  18 
-- Kafka
-- Spark
-- ETL
-- Delta Lake
-- Iceberg
-- Data Pipelines
+## Phase 17: DevOps & Platform Engineering
+- Terraform
+- Helm
+- Argo CD
+- GitHub Actions
+- Jenkins
+- Observability
 
 ---
 
-## Phase 17: Enterprise Integration  19 
-- Salesforce APIs
-- SAP Integration
-- Snowflake
-- Databricks
-- Slack APIs
-- Microsoft Graph
-- Google Workspace APIs
-
----
-
-## Phase 18: Customer Engineering  19 
-- Discovery Calls
-- Requirement Gathering
-- Technical Workshops
-- Solution Design
-- Technical Scoping
-- Architecture Reviews
-- Customer Success
-
----
-
-## Phase 19: Product Thinking 20 
-- Product Discovery
-- Product Strategy
-- MVP
-- User Journey
-- UX Basics
-- Prioritization
-- Metrics
-
----
-
-## Phase 20: Consulting Skills  20 
-- Executive Communication
-- Storytelling
-- Presentation Skills
-- Documentation
-- Proposal Writing
-- Stakeholder Management
-
----
-
-## Phase 21: Enterprise Architecture  21 
-- Solution Architecture
-- Cloud Architecture
-- Security Architecture
-- AI Architecture
-- Event-Driven Architecture
-
----
-
-## Phase 22: Enterprise AI  21 
-- Enterprise RAG
-- Agentic AI
-- AI Governance
+## Phase 18: AI Security & Governance
 - AI Security
-- AI Evaluation
+- Privacy
+- Compliance
 - Guardrails
+- Responsible AI
+- AI Governance
 
 ---
 
-## Phase 23: Business Knowledge  22 
-- ROI
+## Phase 19: Production AI Systems
+- Monitoring
+- Evaluation
 - Cost Optimization
-- FinOps
-- KPIs
-- Business Process Mapping
+- Reliability Engineering
+- Scaling
+- Performance Tuning
 
 ---
 
-## Phase 24: Real-World Delivery   22
-- Production Debugging
-- Incident Response
-- On-Call
-- Customer Support
-- Root Cause Analysis
-
----  RAG
-
- Retrieval-Augmented Generation (RAG) 23 
-Document Processing
-Chunking
-Metadata Extraction
-OCR
-Embeddings
-OpenAI Embeddings
-BGE Models
-Sentence Transformers
-Vector Databases
-Pinecone
-Weaviate
-Qdrant
-ChromaDB
-FAISS
-Retrieval
-Hybrid Search
-Metadata Filtering
-Re-Ranking
-Evaluation
-Ragas
-DeepEval
-LangSmith
- 
-Agentic AI   24 
-Frameworks
-LangChain
-LangGraph
-LlamaIndex
-CrewAI
-AutoGen
-Concepts
-Agents
-Planning
-Reflection
-Tool Use
-Memory
-Human-in-the-Loop
-Protocols
-MCP
-A2A Protocol
-
-
-------------------------------------- 25 
-
-# Phase 25: Distributed Systems
-- Microservices
-- Event Driven Systems
-- Message Queues
-- API Gateway
+## Phase 20: Enterprise AI
+- Enterprise Integrations
+- CRM & ERP Integration
+- Event-Driven Architecture
+- AI Architecture
+- Business Workflows
+- AI Product Engineering
 
 ---
 
-# Phase 26: AI Fundamentals
-- AI vs ML vs DL
-- Machine Learning Basics
-- Neural Networks
+## Phase 21: Domain Expertise
+- Healthcare AI
+- Finance AI
+- Insurance AI
+- Retail AI
+- Manufacturing AI
 
 ---
 
-# Phase 27: Generative AI & LLMs
-- Transformers
-- LLM Fundamentals
-- Tokenization
-- Embeddings
-
----
-
-# Phase 28: RAG & LLMOps
-- Vector Databases
-- RAG
-- LangChain
-- LlamaIndex
-
----
-
-# Phase 29: Agentic AI
-- LangGraph
-- AI Agents
-- Tool Calling
-- Multi-Agent Systems
----------------------------------------
-
-
-
-## Phase 26: Capstone Projects
-- Enterprise RAG Platform
-- AI Customer Support Agent
-- Internal AI Platform
-- AI Developer Platform
-- Multi-Agent Enterprise System
-- AI Infrastructure on Kubernetes
-- End-to-End Customer Deployment
-
----
-
-# Final Skills
-
-- Software Engineering
-- AI Engineering
-- Platform Engineering
-- Cloud Engineering
-- DevOps
-- MLOps
-- LLMOps
-- Solution Architecture
-- Customer Engineering
-- Technical Consulting
-- Product Thinking
-- Enterprise Architecture
-- Production Deployment
-- Executive Communication
+## Phase 22: Career Growth
+- Portfolio Projects
+- Open Source
+- Technical Writing
+- Technical Leadership
+- AI Consulting
+- AI Solution Architecture
